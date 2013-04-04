@@ -7,12 +7,12 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////Parámetros de configuración del maestro////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////
-#define ID_UBIDOTS 13735
-#define BASE_TIEMPO ID_1 //ID_1 = 4 SEGUNDOS, ID_2 = 8 SEGUNDOS, ID_3 = 16 SEGUNDOS
-#define PERIODOS 2       //Periodo de la aplicación = BASE_TIEMPO*PERIODOS
-#define rssitest 1       //COMENTAR PARA DESHABILITAR PRUEBAS DE RSSI
+#define ID_UBIDOTS 14500
+#define BASE_TIEMPO ID_2 //ID_1 = 4 SEGUNDOS, ID_2 = 8 SEGUNDOS, ID_3 = 16 SEGUNDOS
+#define PERIODOS 4       //Periodo de la aplicación = BASE_TIEMPO*PERIODOS
+//#define rssitest 1       //COMENTAR PARA DESHABILITAR PRUEBAS DE RSSI
 #define CLOUDTHINX 1	 //=1 para CLOUDTHINX, !=1 para el kit de desarrollo
-#define FIRMWARE_VERSION "--v130322.1\n"
+#define FIRMWARE_VERSION "--v130403.1\n"
 ///////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////
 

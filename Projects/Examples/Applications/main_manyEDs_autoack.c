@@ -7,10 +7,10 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////Parámetros de configuración del nodo///////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////
-#define ID_HUM_MSB 0x35		//Byte más significativo de la variable de Ubidots de la humedad
-#define ID_HUM_LSB 0x9A		//Byte menos significativo de la variable de Ubidots de la humedad
-#define ID_TEM_MSB 0x35		//Byte más significativo de la variable de Ubidots de la temperatura
-#define ID_TEM_LSB 0x9B		//Byte menos significativo de la variable de Ubidots de la temperatura
+#define ID_HUM_MSB 0x38		//Byte más significativo de la variable de Ubidots de la humedad
+#define ID_HUM_LSB 0xA2		//Byte menos significativo de la variable de Ubidots de la humedad
+#define ID_TEM_MSB 0x38		//Byte más significativo de la variable de Ubidots de la temperatura
+#define ID_TEM_LSB 0xA1		//Byte menos significativo de la variable de Ubidots de la temperatura
 #define BASE_TIEMPO ID_3 	//ID_1 = 4 SEGUNDOS, ID_2 = 8 SEGUNDOS, ID_3 = 16 SEGUNDOS Periodo de la interrupción del Timer
 #define PERIODOS 20      	//Periodo de la transmisión = BASE_TIEMPO*PERIODOS
 //#define TEMP   1			//Comentar cuando la aplicación no use un tmp102
