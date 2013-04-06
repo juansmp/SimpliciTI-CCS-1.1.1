@@ -8,9 +8,9 @@
 ////////////////////////Parámetros de configuración del nodo///////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////
 #define ID_HUM_MSB 0x38		//Byte más significativo de la variable de Ubidots de la humedad
-#define ID_HUM_LSB 0xA2		//Byte menos significativo de la variable de Ubidots de la humedad
+#define ID_HUM_LSB 0x4D		//Byte menos significativo de la variable de Ubidots de la humedad
 #define ID_TEM_MSB 0x38		//Byte más significativo de la variable de Ubidots de la temperatura
-#define ID_TEM_LSB 0xA1		//Byte menos significativo de la variable de Ubidots de la temperatura
+#define ID_TEM_LSB 0x4B		//Byte menos significativo de la variable de Ubidots de la temperatura
 #define BASE_TIEMPO ID_3 	//ID_1 = 4 SEGUNDOS, ID_2 = 8 SEGUNDOS, ID_3 = 16 SEGUNDOS Periodo de la interrupción del Timer
 #define PERIODOS 20      	//Periodo de la transmisión = BASE_TIEMPO*PERIODOS
 //#define TEMP   1			//Comentar cuando la aplicación no use un tmp102
@@ -115,7 +115,7 @@ void main (void)
    */
   while (SMPL_SUCCESS != SMPL_Init(0))
   {
-	  if(intentos<10) {
+	  if(intentos<5) {
 
 		  TA1CTL = TASSEL_1 + MC_2 + TACLR + TAIE; //+ ID_3;  	   // ACLK, contmode, clear TAR
 																   // enable interrupt
@@ -123,7 +123,7 @@ void main (void)
 						 __no_operation();                         // For debugger
 						 intentos++;
 	  }else{
-		  for(retardo_16s=0;retardo_16s<20;retardo_16s++){
+		  for(retardo_16s=0;retardo_16s<250;retardo_16s++){
 					  TA1CTL = TASSEL_1 + MC_2 + TACLR + TAIE+ ID_3;  // ACLK, contmode, clear TAR
 															   // enable interrupt
 					 __bis_SR_register(LPM3_bits + GIE);       // Enter LPM3, enable interrupts
