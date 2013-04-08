@@ -123,7 +123,7 @@ void main (void)
 						 __no_operation();                         // For debugger
 						 intentos++;
 	  }else{
-		  for(retardo_16s=0;retardo_16s<250;retardo_16s++){
+		  for(retardo_16s=0;retardo_16s<20;retardo_16s++){
 					  TA1CTL = TASSEL_1 + MC_2 + TACLR + TAIE+ ID_3;  // ACLK, contmode, clear TAR
 															   // enable interrupt
 					 __bis_SR_register(LPM3_bits + GIE);       // Enter LPM3, enable interrupts

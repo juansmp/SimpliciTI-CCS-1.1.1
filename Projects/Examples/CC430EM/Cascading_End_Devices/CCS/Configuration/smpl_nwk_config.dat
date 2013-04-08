@@ -1,5 +1,5 @@
 # Default Join token
---define=DEFAULT_JOIN_TOKEN=0x05062F4F
+--define=DEFAULT_JOIN_TOKEN=0x0506359E
 #
 #  Filename:       smpl_nwk_config.dat
 #  Revised:        $Date: 2009-02-07 14:21:07 -0700 (Sat, 07 Feb 2009) $

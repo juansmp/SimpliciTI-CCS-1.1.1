@@ -1,5 +1,5 @@
 # Default Join token
---define=DEFAULT_JOIN_TOKEN=0x0506384E
+--define=DEFAULT_JOIN_TOKEN=0x0506359E
 # cambiar los últimos 4 dígitos por la dirección del maestro asociado
 
 
