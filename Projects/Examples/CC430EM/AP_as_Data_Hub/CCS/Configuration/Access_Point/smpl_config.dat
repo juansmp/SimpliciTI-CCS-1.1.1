@@ -1,4 +1,4 @@
---define=THIS_DEVICE_ADDRESS="{0x78, 0x56, 0x35, 0x9E}"
+--define=THIS_DEVICE_ADDRESS="{0x78, 0x56, 0x38, 0xA4}"
 # Cambiar los últimos dos bytes
 
 # This device's address. The first byte is used as a filter on the CC1100/CC2500

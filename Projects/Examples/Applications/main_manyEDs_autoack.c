@@ -7,14 +7,14 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////Parámetros de configuración del nodo///////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////
-#define ID_HUM_MSB 0x38		//Byte más significativo de la variable de Ubidots de la humedad
-#define ID_HUM_LSB 0x4D		//Byte menos significativo de la variable de Ubidots de la humedad
-#define ID_TEM_MSB 0x38		//Byte más significativo de la variable de Ubidots de la temperatura
-#define ID_TEM_LSB 0x4B		//Byte menos significativo de la variable de Ubidots de la temperatura
-#define BASE_TIEMPO ID_3 	//ID_1 = 4 SEGUNDOS, ID_2 = 8 SEGUNDOS, ID_3 = 16 SEGUNDOS Periodo de la interrupción del Timer
-#define PERIODOS 20      	//Periodo de la transmisión = BASE_TIEMPO*PERIODOS
-//#define TEMP   1			//Comentar cuando la aplicación no use un tmp102
-#define TEMP_HUM  1		//Comentar cuando la aplicación no use un HIH6131
+#define ID_HUM_MSB 0x2C		//Byte más significativo de la variable de Ubidots de la humedad
+#define ID_HUM_LSB 0xE6		//Byte menos significativo de la variable de Ubidots de la humedad
+#define ID_TEM_MSB 0x2C		//Byte más significativo de la variable de Ubidots de la temperatura
+#define ID_TEM_LSB 0xE6		//Byte menos significativo de la variable de Ubidots de la temperatura
+#define BASE_TIEMPO ID_2 	//ID_1 = 4 SEGUNDOS, ID_2 = 8 SEGUNDOS, ID_3 = 16 SEGUNDOS Periodo de la interrupción del Timer
+#define PERIODOS 1      	//Periodo de la transmisión = BASE_TIEMPO*PERIODOS
+#define TEMP   1			//Comentar cuando la aplicación no use un tmp102
+//#define TEMP_HUM  1		//Comentar cuando la aplicación no use un HIH6131
 //#define PwrIdx IOCTL_LEVEL_1; //IOCTL_LEVEL_0:-10dB ,IOCTL_LEVEL_1:0dB, IOCTL_LEVEL_2:10dB pwr
 ///////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////

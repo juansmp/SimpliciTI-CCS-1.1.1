@@ -1,4 +1,4 @@
---define=THIS_DEVICE_ADDRESS="{0x79, 0x56, 0x38, 0xF6}"
+--define=THIS_DEVICE_ADDRESS="{0x79, 0x56, 0x36, 0x43}"
 #
 #  Filename:       smpl_config.dat
 #  Revised:        $Date: 2008-11-18 16:54:54 -0800 (Tue, 18 Nov 2008) $
